@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Pageflor</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contacto-intro">
+            <h2>Contáctanos</h2>
+            <p>¿Interesado en comprar al por mayor? Estamos listos para atenderte.</p>
+        </section>
+        <div class="contacto-container">
+            <form class="form-mayorista">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="empresa">Empresa:</label>
+                    <input type="text" id="empresa" name="empresa">
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje (Pedido/Volumen):</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar Mensaje</button>
+            </form>
+            <div class="info-contacto">
+                <h3>Información de Contacto</h3>
+                <ul>
+                    <li><strong>Dirección:</strong> [Dirección del Cultivo/Oficina]</li>
+                    <li><strong>Email:</strong> contacto@pageflor.com</li>
+                    <li><strong>Teléfono:</strong> +57 300 123 4567</li>
+                </ul>
+                <a href="https://wa.me/573001234567?text=Hola,%20estoy%20interesado%20en%20comprar%20flores%20al%20por%20mayor"
+                    target="_blank" class="btn-whatsapp">
+                    <span class="whatsapp-icon">💬</span>
+                    Contactar por WhatsApp
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Pageflor. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
