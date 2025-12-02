@@ -188,7 +188,7 @@ main {
 /* --- HERO SECTION CON COLLAGE --- */
 
 .hero {
-    background-image: url('../img/imge.png');
+    background-image: url('../img/image.png');
     border-radius: 20px;
     min-height: 600px;
     display: flex;
