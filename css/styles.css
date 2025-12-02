@@ -36,7 +36,11 @@ body {
     line-height: 1.7;
     font-weight: 300;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
+
 
 h1,
 h2,
@@ -116,7 +120,7 @@ footer {
     color: var(--color-blanco);
     text-align: center;
     padding: 3rem 2rem;
-    margin-top: 5rem;
+    margin-top: auto;
     box-shadow: var(--shadow-lg);
 }
 
@@ -133,6 +137,69 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 3rem 2rem;
+    flex: 1;
+    width: 100%;
+}
+
+/* --- HISTORIA PAGE SECTIONS --- */
+
+.trayectoria,
+.valores-section {
+    background: linear-gradient(135deg, var(--color-primario) 0%, #1F4A20 100%);
+    color: var(--color-blanco);
+    padding: 3rem 2.5rem;
+    border-radius: 25px;
+    margin-bottom: 2.5rem;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-smooth);
+}
+
+.trayectoria:hover,
+.valores-section:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+}
+
+.trayectoria h2,
+.valores-section h2 {
+    color: var(--color-blanco);
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.trayectoria p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.valores-section ul.valores {
+    list-style: none;
+    padding: 0;
+}
+
+.valores-section ul.valores li {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 1.2rem;
+    padding-left: 2rem;
+    position: relative;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.valores-section ul.valores li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--color-acento);
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.valores-section ul.valores li strong {
+    color: var(--color-acento);
 }
 
 /* --- BOTONES --- */
@@ -213,7 +280,7 @@ main {
     width: 100%;
     height: 100%;
     z-index: 2;
-    opacity: 0.15; 
+    opacity: 0.15;
 }
 
 .collage-item {
@@ -353,22 +420,25 @@ main {
 /* --- HERO CONTENT --- */
 .hero-content {
     position: relative;
-        z-index: 10;
-            text-align: center;
-            }
+    z-index: 10;
+    text-align: center;
+}
 
-            .hero-content h1 {
-                font-size: clamp(2.4rem, 5vw, 3.6rem);
-                    font-weight: 700;
-                        color: #fff;
-                            margin-bottom: 1.2rem;
-                            }
+.hero-content h1 {
+    font-size: 400px;
+    font-weight: 900rem;
+    color: #fff;
+    margin-bottom: 1.2rem;
+    height: 100%;
+}
 
-                            .hero-content p {
-                                font-size: clamp(1.1rem, 2.4vw, 1.4rem);
-                                    color: rgba(255, 255, 255, 0.85);
-                                        font-weight: 300;
-                                            line-height: 1.6;inline-size: inherit;  }
+.hero-content p {
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    color: rgba(6, 95, 54, 0.95);
+    font-weight: 600;
+    line-height: 1.6;
+    inline-size: inherit;
+}
 
 /* --- INTRO SECTION --- */
 
@@ -380,7 +450,7 @@ main {
     box-shadow: var(--shadow-sm);
     margin-bottom: 4rem;
     border: 1px solid rgba(212, 175, 55, 0.2);
-        }
+}
 
 .intro h2 {
     font-size: 2.5rem;
@@ -519,12 +589,10 @@ main {
     transform: translateY(0);
 }
 
-
 .contacto-intro h2 {
     font-size: 3rem;
     margin-bottom: 1rem;
     text-align: center;
-
 }
 
 .contacto-intro p {
@@ -533,9 +601,6 @@ main {
     font-style: italic;
     text-align: center;
     margin-bottom: 2rem;
-
-
-
 }
 
 .contacto-container {
@@ -610,7 +675,11 @@ main {
 
 .info-contacto li {
     margin-bottom: 1.5rem;
+}
 
+/* --- RESPONSIVE --- */
+
+@media (max-width: 768px) {
     nav ul {
         flex-direction: column;
         gap: 1.2rem;
@@ -624,7 +693,6 @@ main {
     .hero {
         min-height: 350px;
         padding: 3rem 1.5rem;
-        background-color: antiquewhite;
     }
 
     .hero-content h1 {
