@@ -258,6 +258,7 @@ main {
 
 .hero {
     background-image: url('../img/image.png');
+    image-rendering:crisp-edges;
     border-radius: 20px;
     min-height: 600px;
     display: flex;
