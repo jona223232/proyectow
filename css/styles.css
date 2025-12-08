@@ -246,9 +246,9 @@ main {
 /* --- PÁGINA HISTORIA PREMIUM --- */
 
 .historia-hero {
-    background: linear-gradient(135deg, var(--color-primario) 0%, #1F4A20 100%);
+    background-color: var(--color-primario);
     border-radius: 20px;
-    padding: 5rem 4rem;
+    padding: 4rem 4rem;
     margin-bottom: 6rem;
     display: flex;
     justify-content: space-between;
@@ -290,9 +290,9 @@ main {
 .linea-2 {
     overflow: hidden;
     white-space: nowrap;
-    border-right: .15em solid white;
+    border-right: .15em solid var(--color-blanco);
     font-size: 30px;
-    color: rgba(255, 255, 255, 0.85);
+    color: var(--color-blanco);
     width: 0;
     /* Empiezan invisibles */
 }
@@ -308,7 +308,7 @@ main {
 .typewriter {
     font-size: 30px;
     /* Ajusta a tu gusto */
-    color: rgba(255, 255, 255, 0.85);
+    color: #ffebd5;
     font-weight: 300;
     line-height: 1.5;
 
@@ -323,7 +323,7 @@ main {
 
 /* --- ANIMACIÓN LÍNEA 1 --- */
 .line-1 {
-    border-right: 2px solid white;
+    border-right: 2px solid#FFF8F0;
     /* Cursor inicial */
 
     /* 1. typing: Dura 2.5s.
@@ -339,7 +339,7 @@ main {
 
 /* --- ANIMACIÓN LÍNEA 2 --- */
 .line-2 {
-    border-right: 2px solid white;
+    border-right: 2px solid #FFF8F0;
     /* Cursor */
     border-right-color: transparent;
     /* Invisible al principio */
@@ -391,7 +391,7 @@ main {
     height: 350px;
     width: 100%;
     object-fit: contain;
-    filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0 15px 35px rgba(10, 255, 39, 0.25));
     background: fixed;
     margin-right: -20px;
   
@@ -1223,7 +1223,7 @@ main {
     display: block;
     margin-bottom: 0.8rem;
     font-weight: 500;
-    color: var(--color-texto);
+    color: var(--color-primario);
     font-size: 0.95rem;
     letter-spacing: 0.5px;
 }
@@ -1473,3 +1473,22 @@ main {
         border-right-color: transparent;
     }
 }
+
+.logi{
+ height: 60px;
+    width: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+    transition: transform 0.6s ease-in-out;
+    box-shadow: var(--shadow-md--);
+}
+
+.logi:hover:hover {
+    animation: rotate 0.6s ease-in-out;
+}
+
+
+
